@@ -1,18 +1,18 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Awesome Books
 
-> One paragraph statement about the project.
+> In this project, we will create a web application that adopts localStorage and collects datas of books.
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- Javascript
+
 
 ## Live Demo
 
@@ -21,23 +21,20 @@ Additional description about the project and its features.
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+
 
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+
 
 ### Setup
 
-### Install
+Clone this Repository
+You can do so on the website Girhub.com, go to the green button that says "Code", click on it, and clone it.
+You can also type git clone https://github.com/adamteddychang/Awesome-books.git into your terminal.
 
-### Usage
 
-### Run tests
-
-### Deployment
 
 
 
@@ -45,6 +42,11 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@adamteddychang](https://github.com/adamteddychang)
 - Twitter: [@AdamChang3](https://twitter.com/AdamChang3)
+
+👤 **Chimwemwe Sinyinza**
+-Github: @Chimwemwe-127001
+-Twitter: @chimwewme
+
 
 
 ## 🤝 Contributing
