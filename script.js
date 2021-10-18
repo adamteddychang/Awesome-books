@@ -48,4 +48,8 @@ function buttonClick() {
   localStorage.setItem('bookListlocal', JSON.stringify(booksListArr));
 }
 
-addButton.addEventListener('click', buttonClick);
+addButton.addEventListener('click', () => {
+  if (title.value !== '' && author.value !== '') {
+    buttonClick();
+  }
+});
