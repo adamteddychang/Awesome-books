@@ -6,11 +6,9 @@ class Books {
     for (let bookIndex = 0; bookIndex < books.length; bookIndex += 1) {
       const book = books[bookIndex];
       bookList.innerHTML += `
-      <div class="book">
-      <h2>Book: ${book.title}</h2>
-      <h3>Author: ${book.author}</h3>
+      <div class="book">      
+      <h2> "${book.title}" by ${book.author}</h2>      
       <button type="button" class="remove" onclick="removeBook(${bookIndex})">Remove</button>
-      <hr>
       </div>`;
     }
   }

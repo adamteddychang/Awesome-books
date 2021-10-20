@@ -1,3 +1,43 @@
-body {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+* {
+  font-family: 'Comfortaa', cursive;
 }
+
+body {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  background: #f4f5f5 url("halloween.png") repeat scroll -2px -5px;
+  background-size: 10rem 10rem;
+}
+
+h1 {
+  border: 1px solid black;
+  background-color: white;
+  padding: 10px 20px;
+}
+
+#books {
+  border: 1px solid black;
+  background-color: white;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  width: 40rem;
+}
+
+.book > h2 {
+  margin-left: 1rem;
+}
+
+.seperate {
+  width: 100px;
+  height: 5px;
+  background-color: black;
+  margin: 1rem auto;
+}
+
