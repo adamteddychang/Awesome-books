@@ -4,7 +4,7 @@
 
 > In this project, we will create a web application that adopts localStorage and collects datas of books.
 
-
+![Screenshot](awesomebookss.png)
 
 
 
@@ -45,8 +45,8 @@ You can also type git clone https://github.com/adamteddychang/Awesome-books.git 
 - Twitter: [@AdamChang3](https://twitter.com/AdamChang3)
 
 👤 **Chimwemwe Sinyinza**
--Github: @Chimwemwe-127001
--Twitter: @chimwewme
+-Github: [@Chimwemwe-127001](https://github.com/Chimwemwe-127001)
+-Twitter: [@chimwewme](https://twitter.com/chimwewme)
 
 
 
