@@ -4,7 +4,7 @@
 
 > In this project, we will create a web application that adopts localStorage and collects datas of books.
 
-![screenshot](./app_screenshot.png)
+
 
 
 
