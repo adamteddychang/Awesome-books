@@ -4,6 +4,10 @@
   font-family: 'Comfortaa', cursive;
 }
 
+.d-flex {
+  display: flex;
+}
+
 body {
   display: grid;
   justify-content: center;
@@ -21,17 +25,29 @@ h1 {
 #books {
   border: 1px solid black;
   background-color: white;
+  padding: 0;
 }
 
 .book {
-  display: flex;
   justify-content: space-between;
   border: 1px solid black;
   min-width: 40rem;
 }
 
+li:nth-child(even) {
+  background-color: white;
+}
+
+li:nth-child(odd) {
+  background-color: red;
+}
+
 .book > h2 {
   margin-left: 1rem;
+}
+
+ul {
+  list-style: none;
 }
 
 .seperate {
@@ -42,7 +58,6 @@ h1 {
 }
 
 .form {
-  display: flex;
   flex-direction: column;
   width: 20rem;
   background-color: white;

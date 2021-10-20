@@ -10,21 +10,21 @@
 </head>
 
 <body>
-  
+
   <header>
     <h1>Awesome books</h1>
   </header>
 
 
-  <div id="books">
-    
-    
-  </div>
-  <div class="seperate">
-  
-</div>
+  <ul id="books">
 
-  <form class="form">
+
+  </ul>
+  <div class="seperate">
+
+  </div>
+
+  <form class="form d-flex">
     <h3>Add a new book</h3>
     <input class="textinput" type="text" placeholder="Title" required id="title" value="">
     <input class="textinput" type="text" placeholder="Author" required id="author" value="">
@@ -32,8 +32,10 @@
   </form>
 
 
-<script src="script.js"></script> 
-<script>const removeBook = (bookId) => Books.remove(bookId);</script>
+  <script src="script.js"></script>
+  <script>
+    const removeBook = (bookId) => Books.remove(bookId);
+  </script>
 </body>
 
 </html>
