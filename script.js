@@ -1,9 +1,10 @@
 const bookList = document.querySelector('#books');
+let bookIndex;
 class Books {
   static display() {
     const books = Books.getBooks();
     bookList.innerHTML = '';
-    for (let bookIndex = 0; bookIndex < books.length; bookIndex += 1) {
+    for (bookIndex = 0; bookIndex < books.length; bookIndex += 1) {
       const book = books[bookIndex];
       bookList.innerHTML += `
       <li class="book d-flex">      
@@ -57,4 +58,6 @@ document.querySelector('#Add').addEventListener('click', (e) => {
 
 const removeBook = (bookId) => Books.remove(bookId);
 
-removeBook();
+if (bookIndex === -1) {
+  removeBook();
+}
