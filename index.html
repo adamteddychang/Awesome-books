@@ -8,35 +8,62 @@
   <title>Awesome Books</title>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="halloween.png" />
+  <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>
 </head>
 
 <body>
 
-  <header>
-    <h1>Awesome books</h1>
+
+  <header class="header">
+
+    <nav id="nav" class="d-flex">
+      <h1 class="nav-title">Awesome books</h1>
+      <ul id="nav-ul" class="d-flex">
+        <li><a class="nav-link" id="List">List</a></li>
+        <li><a class="nav-link" id="Add-new">Add new</a></li>
+        <li><a class="nav-link" id="Contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-
-
-  <ul id="books">
-
-
-  </ul>
-  <div class="seperate">
-
+  <div id="date" class="d-flex">
+    <h3 id="date-time">0 </h3>
   </div>
 
-  <form class="form d-flex">
-    <h3>Add a new book</h3>
-    <input class="textinput" type="text" placeholder="Title" required id="title" value="">
-    <input class="textinput" type="text" placeholder="Author" required id="author" value="">
-    <input type="button" value="Add" id="Add">
-  </form>
+  <section id="main">
+    <h3 class="d-no">0</h3>
+    <section id="bookdisplay">
+      <h3>List of books</h3>
+      <ul id="books">
+      </ul>
+    </section>
+    <section id="Addbook" class="d-no">
+      <form class="form d-flex">
+        <h3>Add a new book</h3>
+        <input class="textinput" type="text" placeholder="Title" required id="title" value="">
+        <input class="textinput" type="text" placeholder="Author" required id="author" value="">
+        <input type="button" value="Add" id="Add">
+      </form>
+    </section>
+    <section id="contact-sec" class="d-no">
+      <div class="contact-cont">
+        <h3>Contact information</h3>
+        <p>Do you have any questions or you just want to say "Hello"?</p>
+        <p>You can reach out to us!</p>
+        <ul>
+          <li>Our e-mail: mail@fakemail.com</li>
+          <li>Our Phone number: 127001</li>
+          <li>Our address: 69 This Street, That city, AK, UGG </li>
+        </ul>
+      </div>
+    </section>
+  </section>
 
-
+  <footer>
+    <h3>Copyright</h3>
+  </footer>
   <script src="script.js"></script>
-  <script>
-    const removeBook = (bookId) => Books.remove(bookId);
-  </script>
+  <script src="test.js"></script>
+
 </body>
 
 </html>

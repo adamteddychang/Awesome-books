@@ -1,9 +1,10 @@
 const bookList = document.querySelector('#books');
+let bookIndex;
 class Books {
   static display() {
     const books = Books.getBooks();
     bookList.innerHTML = '';
-    for (let bookIndex = 0; bookIndex < books.length; bookIndex += 1) {
+    for (bookIndex = 0; bookIndex < books.length; bookIndex += 1) {
       const book = books[bookIndex];
       bookList.innerHTML += `
       <li class="book d-flex">      
@@ -43,7 +44,7 @@ class Books {
   }
 }
 document.addEventListener('DOMContentLoaded', () => Books.display());
-document.querySelector('.form').addEventListener('click', (e) => {
+document.querySelector('#Add').addEventListener('click', (e) => {
   e.preventDefault();
   const newBook = {
     author: document.querySelector('#author').value,
@@ -54,3 +55,9 @@ document.querySelector('.form').addEventListener('click', (e) => {
     Books.clearFields();
   }
 });
+
+const removeBook = (bookId) => Books.remove(bookId);
+
+if (bookIndex === -1) {
+  removeBook();
+}

@@ -4,22 +4,125 @@
   font-family: 'Comfortaa', cursive;
 }
 
+ul {
+  list-style: none;
+}
+
+.header {
+  width: 100%;
+  margin-bottom: 0;
+  padding-block: 1rem;
+}
+
 .d-flex {
   display: flex;
 }
 
+.nav-title {
+  border: none;
+  margin: 0;
+  font-size: 2em;
+}
+
+#nav {
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid black;
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+#nav-ul {
+  margin: 0;
+}
+
+.contact-cont ul {
+  list-style-type: disc;
+}
+
+.contact-cont li {
+  margin-top: 10px;
+}
+
+#nav-ul li {
+  cursor: pointer;
+  margin-right: 1rem;
+  padding-right: 1rem;
+  border-right: 2px solid black;
+  line-height: 30px;
+}
+
+#nav-ul li:last-child {
+  border: none;
+}
+
+.nav-link {
+  font-size: 1.25em;
+  text-decoration: none;
+  color: black;
+}
+
+#date {
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+#date-time {
+  width: max-content;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0;
+  background-color: red;
+  padding: 1rem;
+}
+
 body {
+  margin: 0;
+  padding: 0;
+  background: #f4f5f5 url("halloween.png") repeat scroll -2px -5px;
+  background-size: 10rem 10rem;
+}
+
+#main {
   display: grid;
   justify-content: center;
   justify-items: center;
-  background: #f4f5f5 url("halloween.png") repeat scroll -2px -5px;
-  background-size: 10rem 10rem;
 }
 
 h1 {
   border: 1px solid black;
   background-color: white;
   padding: 10px 20px;
+}
+
+footer h3 {
+  margin-left: 10%;
+}
+
+.form > h3 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.contact-cont h3 {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 600;
+}
+
+#bookdisplay h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5em;
+  background-color: white;
+  border: 2px solid black;
+  margin: 0;
+  padding-block: 24px;
 }
 
 #books {
@@ -34,20 +137,16 @@ h1 {
   min-width: 40rem;
 }
 
-li:nth-child(even) {
+.book:nth-child(even) {
   background-color: white;
 }
 
-li:nth-child(odd) {
+.book:nth-child(odd) {
   background-color: red;
 }
 
 .book > h2 {
   margin-left: 1rem;
-}
-
-ul {
-  list-style: none;
 }
 
 .seperate {
@@ -59,18 +158,18 @@ ul {
 
 .form {
   flex-direction: column;
-  width: 20rem;
+  width: 30rem;
   background-color: white;
   border: 2px solid black;
   padding: 10px;
 }
 
-.form > h3 {
-  text-align: center;
+.d-no {
+  display: none;
 }
 
 .form > * {
-  margin: 5px;
+  margin: 10px;
 }
 
 #Add {
@@ -79,6 +178,7 @@ ul {
   border-radius: 5%;
   box-shadow: 2px 2px 2px 1px #000;
   font-weight: 600;
+  font-size: 1.23em;
 }
 
 .remove {
@@ -96,4 +196,17 @@ ul {
 
 button {
   font-weight: 600;
+}
+
+.contact-cont {
+  background-color: white;
+  padding: 2rem;
+  border: 2px solid black;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: grey;
+  width: 100%;
 }
