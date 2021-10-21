@@ -43,7 +43,7 @@ class Books {
   }
 }
 document.addEventListener('DOMContentLoaded', () => Books.display());
-document.querySelector('.form').addEventListener('click', (e) => {
+document.querySelector('#Add').addEventListener('click', (e) => {
   e.preventDefault();
   const newBook = {
     author: document.querySelector('#author').value,
