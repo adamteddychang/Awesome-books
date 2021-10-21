@@ -4,16 +4,115 @@
   font-family: 'Comfortaa', cursive;
 }
 
+.header {
+  width: 100%;
+  
+  margin-bottom: 0;
+  padding-block: 1rem;
+  
+}
+
+
 .d-flex {
   display: flex;
 }
 
+.nav-title {
+  border: none;
+  margin: 0;
+  font-size: 2em;
+}
+
+#nav {
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid black;
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+#nav-ul {
+  margin:0;
+  
+}
+
+#nav-ul li{
+  margin-right: 1rem;
+  padding-right: 1rem;
+  border-right: 2px solid black;
+  line-height: 30px;  
+}
+
+#nav-ul li:last-child {
+  border: none;
+}
+
+.nav-link {
+  font-size: 1.25em;
+  text-decoration: none;
+  color: black;
+}
+
+#date {
+  width: 80%;
+  margin: 0 auto;
+  
+  color: white;
+  
+  display: flex;
+  justify-content: flex-end;
+  
+  
+  
+ 
+  
+  
+}
+
+#date-time {
+  width: max-content;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 ;
+  background-color: red;
+  padding: 1rem;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
+  margin: 0;
+  padding: 0;
+  
+  background: #f4f5f5 url("halloween.png") repeat scroll -2px -5px;
+  background-size: 10rem 10rem;
+}
+
+#main {
   display: grid;
   justify-content: center;
   justify-items: center;
-  background: #f4f5f5 url("halloween.png") repeat scroll -2px -5px;
-  background-size: 10rem 10rem;
 }
 
 h1 {
@@ -34,11 +133,11 @@ h1 {
   min-width: 40rem;
 }
 
-li:nth-child(even) {
+.book:nth-child(even) {
   background-color: white;
 }
 
-li:nth-child(odd) {
+.book:nth-child(odd) {
   background-color: red;
 }
 
@@ -63,6 +162,10 @@ ul {
   background-color: white;
   border: 2px solid black;
   padding: 10px;
+}
+
+.d-no {
+  display: none;
 }
 
 .form > h3 {
@@ -96,4 +199,40 @@ ul {
 
 button {
   font-weight: 600;
+}
+
+
+
+
+
+
+.contact-cont {
+  background-color: white;
+  padding: 2rem;
+}
+
+.contact-cont h3 {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 600;
+}
+
+.contact-cont ul {
+  list-style-type: disc;
+}
+
+.contact-cont li {
+  margin-top: 10px;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: grey;
+  width: 100%;
+}
+
+footer h3 {
+  margin-left: 10%;
 }
