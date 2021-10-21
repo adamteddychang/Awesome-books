@@ -26,66 +26,49 @@
     </nav>
   </header>
   <div id="date" class="d-flex">
-    <h3 id="date-time"></h3>
+    <h3 id="date-time">0 </h3>
   </div>
 
   <section id="main">
-
-    <section id="bookdisplay" >
-    <ul id="books">
-
-
-    </ul>
-      </section>
-
-
-   
-
-
-
-
+    <h3 class="d-no">0</h3>
+    <section id="bookdisplay">
+      <h3>List of books</h3>
+      <ul id="books">
+      </ul>
+    </section>
     <section id="Addbook" class="d-no">
-    <form class="form d-flex">
-      <h3>Add a new book</h3>
-      <input class="textinput" type="text" placeholder="Title" required id="title" value="">
-      <input class="textinput" type="text" placeholder="Author" required id="author" value="">
-      <input type="button" value="Add" id="Add">
-    </form>
+      <form class="form d-flex">
+        <h3>Add a new book</h3>
+        <input class="textinput" type="text" placeholder="Title" required id="title" value="">
+        <input class="textinput" type="text" placeholder="Author" required id="author" value="">
+        <input type="button" value="Add" id="Add">
+      </form>
+    </section>
+    <section id="contact-sec" class="d-no">
+      <div class="contact-cont">
+        <h3>Contact information</h3>
+        <p>Do you have any questions or you just want to say "Hello"?</p>
+        <p>You can reach out to us!</p>
+        <ul>
+          <li>Our e-mail: mail@fakemail.com</li>
+          <li>Our Phone number: 127001</li>
+          <li>Our address: 69 This Street, That city, AK, UGG </li>
+        </ul>
+      </div>
+    </section>
   </section>
-
-  <section id="contact-sec" class="d-no">
-    <div class="contact-cont">
-    <h3>Contact information</h3>
-    <p>Do you have any questions or you just want to say "Hello"?</p>
-    <p>You can reach out to us!</p>
-    <ul>
-      <li>Our e-mail: mail@fakemail.com</li>
-      <li>Our Phone number: 127001</li>
-      <li>Our address: 69 This Street, That city, AK, UGG </li>
-    </ul>
-  </div>
-
-
-
-
-  </section>
-
-
-
-
-
-  </section>
-
 
   <footer>
     <h3>Copyright</h3>
   </footer>
-
-
   <script src="script.js"></script>
   <script src="test.js"></script>
   <script>
     const removeBook = (bookId) => Books.remove(bookId);
+    const { DateTime } = luxon;
+    const localTime = DateTime.local();
+    const now = localTime;
+    document.getElementById('date-time').innerHTML = now;
   </script>
 </body>
 
