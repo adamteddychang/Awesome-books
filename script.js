@@ -54,3 +54,7 @@ document.querySelector('#Add').addEventListener('click', (e) => {
     Books.clearFields();
   }
 });
+
+const removeBook = (bookId) => Books.remove(bookId);
+
+removeBook();

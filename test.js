@@ -22,3 +22,6 @@ Contact.addEventListener('click', () => {
   bookdisplay.classList.add('d-no');
   contactSec.classList.remove('d-no');
 });
+
+const dt = new Date();
+document.getElementById('date-time').innerHTML = dt.toLocaleString();
